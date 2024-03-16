@@ -1,0 +1,15 @@
+﻿@model CuaHangDienThoai.Models.View.SuaTaiKhoanViewModel;
+@{
+    ViewData["Title"] = "Sửa tài khoản";
+}
+
+@if (TempData["SuaTaiKhoan"] != null)
+{
+    <div class="alert alert-danger alert-dismissible fade show">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <strong>@TempData["SuaTaiKhoan"]</strong>
+    </div>
+    TempData.Remove("SuaTaiKhoan");
+}
+
+<h2 class="text-info" style="padding-left: 400px">Đổi mật khẩu</h2>
